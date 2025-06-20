@@ -1,0 +1,1 @@
+call ./server/venv/Scripts/activate && cd ./server && python ./run.py

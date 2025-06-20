@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-css": "^6.3.1",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/lang-javascript": "^6.2.3",
+    "@codemirror/matchbrackets": "^0.19.4",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@uiw/codemirror-theme-dracula": "^4.23.12",
+    "@uiw/codemirror-theme-github": "^4.23.12",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.7.2",
+    "codemirror": "^6.0.0",
+    "crypto-js": "^4.2.0",
+    "path": "^0.12.7",
+    "serve": "^14.2.3",
+    "vue": "^3.4.29",
+    "vue-codemirror-next": "^6.1.1",
+    "vue-request": "^2.0.4",
+    "vue-router": "^4.3.3",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}

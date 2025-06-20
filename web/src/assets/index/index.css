@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.home>.video-slide {
+  z-index: 000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+}
+
+.home .content {
+  z-index: 888;
+  color: #000000;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
+}
+
+.home .content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 65px;
+  padding-top: 100px;
+}
+
+.home .content a {
+  background: #0095ff;
+  padding: 15px 35px;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 30px;
+  transition: 0.5s ease;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.home .media-icons a {
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+  gap: 20px
+}
+
+.slider-navigation .nav-btn {
+  width: 12px;
+  height: 12px;
+  background: #2695e96e;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3 ease;
+}
+
+.slider-navigation .nav-btn.active {
+  background: #2696E9;
+}
+
+.slider-navigation .nav-btn:hover {
+  transform: scale(1.2)
+}
+
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(2.9% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150.0% at 0 50%);
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .home .content {
+    width: 90%;
+  }
+
+  .home .content h1 {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 60px;
+  }
+
+  .home .content h1 span {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .home .content p {
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 40px;
+  }
+
+  .home .content a {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+
+  .home .media-icons {
+    right: 20px;
+  }
+
+}
