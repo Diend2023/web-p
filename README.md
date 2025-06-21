@@ -8,7 +8,7 @@ https://webp.wanqifan.top
 
 # server
 
-server文件夹的内容为该项目的后端项目，你需要：[Python](https://www.python.org/)
+server文件夹的内容为该项目的后端项目，需要[Python](https://www.python.org/)
 
 ### 安装依赖
 
@@ -25,7 +25,7 @@ python run.py
 
 # web
 
-web文件夹的内容为该项目的前端项目，你需要：[Node.js](https://nodejs.cn/)
+web文件夹的内容为该项目的前端项目，需要[Node.js](https://nodejs.cn/)
 
 ### 安装依赖
 
