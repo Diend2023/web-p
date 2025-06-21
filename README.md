@@ -1,29 +1,48 @@
+# WEB-P
+
+该项目是一个本人学习开发的前后端分离的Flask + Vue项目，可以为用户提供静态网页托管功能。
+
+### demo
+
+https://webp.wanqifan.top
+
+# server
+
+server文件夹的内容为该项目的后端项目，你需要：[Python](https://www.python.org/)
+
+### 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 配置
+将.env.example文件复制为.env，填入你的配置，然后运行
+
+```bash
+python run.py
+```
+
 # web
 
-This template should help get you started developing with Vue 3 in Vite.
+web文件夹的内容为该项目的前端项目，你需要：[Node.js](https://nodejs.cn/)
 
-## Recommended IDE Setup
+### 安装依赖
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发
 
-```sh
+确认vite.config.js和vue.config.js中的代理地址，然后运行
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 构建
 
-```sh
+确认web/src/config.js中production的API_BASE_URL为部署的后端地址，然后运行
+```bash
 npm run build
 ```
